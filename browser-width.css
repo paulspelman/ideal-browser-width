@@ -1,0 +1,165 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+  background-color: #33338f;
+  font-family: "Montserrat", sans-serif;
+}
+
+.right {
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+.right .hint-word {
+  font-size: 1.2rem;
+  color: #fff;
+  padding-right: 0.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.right .emoji {
+  margin: 0;
+  padding-right: 1.5rem;
+}
+
+.left {
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+.left .hint-word {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+  padding-right: 1.5rem;
+  text-transform: uppercase;
+}
+
+.left .emoji {
+  margin: 0;
+  padding-right: 0.8rem;
+}
+
+.celebrate {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.congrats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: none;
+  position: relative;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 6vw;
+  line-height: 0.9;
+  margin: 0;
+  color: #ba9dff;
+  padding: 0;
+  width: 100%;
+}
+
+.copy {
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  margin: 5rem 0 0 0;
+  padding: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    background-color: #000;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    visibility: visible;
+  }
+  .celebrate {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .celebrate {
+    opacity: 0;
+    animation: show 2s 1s forwards;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1010px) {
+  html {
+    background-color: #000;
+  }
+  .left {
+    visibility: visible;
+  }
+  .right {
+    display: none;
+  }
+  .celebrate {
+    display: none;
+  }
+}
