@@ -112,7 +112,7 @@ h1 {
   font-size: 1rem;
   letter-spacing: 0.05rem;
   text-align: center;
-  margin: 5rem 0 0 0;
+  margin: 2rem 0 0 0;
   padding: 1rem;
   color: #fff;
   text-transform: uppercase;
@@ -136,7 +136,7 @@ h1 {
 @media only screen and (min-width: 1001px) {
   .celebrate {
     opacity: 0;
-    animation: show 2s 1s forwards;
+    animation: show 2s 0.5s forwards;
   }
 }
 
